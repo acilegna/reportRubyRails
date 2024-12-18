@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+ 
+
+<h1>
+  Task:
+  <%= @task.count %>
+</h1>
+
+<div id="task">
+  <% @task.each do |user| %>
+    <%= render user %>
+  <% end %>
+</div>
