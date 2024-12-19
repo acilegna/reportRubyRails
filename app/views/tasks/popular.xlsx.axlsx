@@ -1,0 +1,10 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Populares") do |sheet|
+ @tasks.each do |task|
+    sheet.add_row [ task.title, task.description, task.location, task.likes  ]
+  end
+   
+    sheet.add_row [ @total]
+end
+
+

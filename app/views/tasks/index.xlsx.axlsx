@@ -1,8 +1,0 @@
-wb = xlsx_package.workbook
-wb.add_worksheet(name: "Products") do |sheet|
- @tasks.each do |product|
-    sheet.add_row [product.id, product.title]
-  end
-end
-
-
