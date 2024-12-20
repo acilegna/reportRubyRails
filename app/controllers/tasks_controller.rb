@@ -1,8 +1,4 @@
-class TasksController < ApplicationController 
-
- 
-
- 
+class TasksController < ApplicationController  
 
   
 def popular

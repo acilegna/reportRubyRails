@@ -1,3 +1,5 @@
-class Task < ApplicationRecord
-
+ 
+ 
+class Task < ActiveRecord::Base
+  
 end
