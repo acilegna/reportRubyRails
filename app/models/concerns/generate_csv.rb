@@ -1,8 +1,8 @@
-module GenerateCsv
+# models/concerns/generate_csv.rb
+module GenerateCSV
   extend ActiveSupport::Concern
   require 'csv'
-
-  class_methods do
+    class_methods do
     def to_csv(collection)
       CSV.generate(col_sep: ';') do |csv|
         csv << attribute_names

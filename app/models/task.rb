@@ -1,3 +1,5 @@
-class Task < ApplicationRecord
-  include GenerateCsv
+ 
+ 
+class Task < ActiveRecord::Base
+  
 end

@@ -1,0 +1,6 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Tareas") do |sheet|
+ @tasks.each do |task|
+   sheet.add_row [ task.title, task.description, task.location, task.responsible,task.status  ]
+  end
+end
